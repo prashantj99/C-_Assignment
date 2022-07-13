@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main(void) 
+{
+    int h, m;
+    scanf("%d:%d",&h,&m);
+
+    printf("%02d hour and %02d Minute",h, m);
+    return 0;
+}
+

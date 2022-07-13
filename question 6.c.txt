@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main(void) 
+{
+    char u_name[50];
+	// your code goes here
+	scanf("%s",u_name);
+	printf("\"Hello ,%s\"",u_name);
+	return 0;
+}
+

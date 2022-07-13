@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(void) 
+{
+    // question 7
+    printf("%%d\n");
+    // question 8
+    printf("\\n\n");
+    // question 9
+    printf("\\\\");
+    return 0;
+}
+

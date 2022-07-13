@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main(void) {
+	int d,m,y;
+	scanf("%d/%d/%d",&d,&m,&y);
+	
+	printf("Day - %02d ,Month - %02d ,Year - %04d",d,m,y);
+	return 0;
+}
+
