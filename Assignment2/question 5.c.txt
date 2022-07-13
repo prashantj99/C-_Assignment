@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main(void) {
+    int num=0;
+    scanf("%d",&num);
+    
+    // check for 3-digit number
+    if(num>=100 && num<=999)
+    {
+        int sum=0;
+        //without loop
+        int r=num%10;
+        num/=10;
+        sum+=r;
+        
+        //2nd digit
+        r=num%10;
+        num/=10;
+        sum+=r;
+        
+        //3rd digit
+        r=num%10;
+        num/=10;
+        sum+=r;
+        
+        printf("sum : %d",sum);
+    }
+    else
+    {
+        printf("invalid number!!!");
+    }
+	return 0;
+}
+

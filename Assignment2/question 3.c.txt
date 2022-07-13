@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void) {
+// 	swap two numbers (with third variable)
+    int a,b,temp;
+    scanf("%d %d ",&a,&b);
+    
+    printf("Before Swap : a=%d ,b=%d\n",a,b); 
+    
+    temp=a;
+    a=b;
+    b=temp;
+    
+    printf("After swap  : a=%d ,b=%d",a,b);
+	return 0;
+}
+

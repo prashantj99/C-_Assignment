@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(void) {
+    // rotate digit by 1 to right
+    int num;
+    scanf("%d",&num);
+    
+    if(num>=100 && num<=999)
+    {
+        int unit=num%10;
+        num/=10;
+        num=unit*100+num;
+        printf("%03d",num);
+    }
+    else
+    {
+        printf("Enter a valid number!!!");
+    }
+    
+    return 0;
+}
+

@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main()
+{
+    int num=0;
+    scanf("%d",&num);
+    printf("unit digit of %d : %d",num,num%10);
+    return 0;
+}

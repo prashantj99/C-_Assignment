@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(void) {
+// 	make unit digit number 
+    int num;
+    scanf("%d",&num);
+    
+    //get unit digit
+    int unit=num%10;
+    printf("%d",num-unit);
+    return 0;
+}
+

@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void) {
+// 	append digit to number 
+    int num ,d;
+    
+    scanf("%d",&num);
+    scanf("%d",&d);
+    if(d>=0 && d<=9)
+    {
+        num=num*10+d;
+        printf("%d",num);
+    }
+    else
+    {
+       printf("digit is required!!!");   
+    }
+    
+    return 0;
+}
+

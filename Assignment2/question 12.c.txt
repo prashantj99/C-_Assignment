@@ -1,0 +1,13 @@
+#include <stdio.h>
+#define SF 76.23
+int main(void) {
+// 	INR ---> USD 
+    float inr;
+    
+    scanf("%f",&inr);
+    
+    printf("%.2f INR : %.2f USD",inr,inr/SF);
+    
+    return 0;
+}
+

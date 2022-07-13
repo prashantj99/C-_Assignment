@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(void) {
+// 	position of first lsb 1
+    int n=0,pos=0;
+    scanf("%d",&n);
+    while(n>0)
+    {
+        if(n&1)
+        {
+            pos++;
+            break;
+        }
+        else
+        {
+            pos++;
+            n>>=1;
+        }
+    }
+    printf("Position : %d",pos);
+	return 0;
+}
+

@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main(void) {
+	char ch;
+	scanf("%c",&ch);
+	printf("ASCII code for '%c' : %d",ch ,ch);
+	return 0;
+}
+
