@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main(void) {
+    /*	check whether a given number 
+        is divisible by 3 and divisible by 2.  
+    */
+    int num;
+    scanf("%d", &num);
+    (num%2==0 && num%3==0)? printf("Yes") : printf("No");
+	return 0;
+}
+

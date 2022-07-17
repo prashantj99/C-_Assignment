@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main(void) {
+	/*
+	 find the greatest among three given numbers.
+	 Print number once if the greatest number app-
+	 -ears two or three times.
+	 */ 
+	int a ,b ,c;
+	int max;
+	
+	scanf("%d %d %d",&a ,&b ,&c);
+	
+	max=a;
+	if(max<b)
+	{
+	    max=b;
+	}
+	
+	if(max<c) 
+	{
+	    max=c;
+	}
+	
+	printf("Maximum : %d",max);
+	
+	return 0;
+	return 0;
+}
+

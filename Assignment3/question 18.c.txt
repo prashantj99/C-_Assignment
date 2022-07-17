@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(void) {
+	/*
+	program which takes the month number
+	as an input and display number of days
+	in that month
+	*
+	*/
+	int month;
+	printf("Enter Month(1-12) : ");
+	scanf("%d", &month);
+	if(month==1 || month==3 || month==5 || month==7 || month==8 || month==10 || month==12)
+    {
+        printf("\nNumber Of Days : %d", 31);
+    }
+    else
+    {
+        printf("\nNumber Of Days : %d", 30);
+    }
+	return 0;
+}
+

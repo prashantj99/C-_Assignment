@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void) {
+    /*	program to take marks of 5 subjects from the user.
+        marks are given out of 100 passing marks is 33.
+        whether the candidate passed the examination or failed. 
+    */
+    
+    int sub1 ,sub2 ,sub3 ,sub4 ,sub5;
+    scanf("%d %d %d %d %d" ,&sub1 ,&sub2 ,&sub3 ,&sub4 ,&sub5);
+    if(100>=sub1>=33 && 100>=sub2>=33 && 100>=sub3>=33 && 100>=sub4>=33 && 100>=sub5>=33){
+         printf("Passed");        
+    }
+    else
+    {
+        printf("Failed");
+    }
+	return 0;
+}
+
