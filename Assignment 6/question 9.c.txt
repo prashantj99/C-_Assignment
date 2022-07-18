@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main(void) {
+    // LCM of two numbers
+	int a ,b ,i ,lcm ,max ,min;
+	scanf("%d %d",&a ,&b);
+	
+	if(a>b){
+	    max=a;
+	    min=b;
+	}
+	else
+	{
+	    max=b;
+	    min=a;
+	}
+    i=1;
+    while(1)
+    {
+        if(max%min==0)
+        {
+            lcm=max;
+            break;
+        }
+        else
+        {
+            i++;
+            max=(a>b?a:b)*i;
+        }
+        
+    }
+	
+	printf("Lcm of %d and %d : %d ",a ,b ,lcm);
+	return 0;
+}
+

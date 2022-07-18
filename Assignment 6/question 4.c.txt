@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int main(void)
+{
+    // sum of square of first n natural number
+    int sum=0,i=1;
+    int num;
+    
+    scanf("%d",&num);
+    
+    while(i<=num)
+    {
+        sum+=i*i;
+        i++;
+    }
+    printf("sum : %d",sum);
+    return 0;
+}
