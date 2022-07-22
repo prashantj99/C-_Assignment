@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+int main(void)
+{
+    int a=0 ,b=1 ,next ,n;
+    
+    scanf("%d",&n);
+    
+    int i=1;
+    
+    while(i<=n-2)
+    {
+        next=a+b;
+        a=b;
+        b=next;
+        i++;
+    }
+    
+    printf("%dth term of fabnocci is %d",n,next);
+    
+    return 0;
+}

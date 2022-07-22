@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main(void) {
+	// Hcf of two number
+	int a ,b ,min;
+	
+	scanf("%d %d", &a ,&b);
+	
+	min=a<b?a : b;
+	
+	int i=2;
+	
+	while(i<=min)
+	{
+	    if(a%i==0 && b%i==0 )
+	    {
+	        break;
+	    }
+	    i++;
+	}
+	 if(i<=min)
+	 {
+	     printf("Hcf of %d and %d is %d", a ,b ,i);
+	 }
+	 else
+	 {
+	     printf("Hcf of %d and %d is %d", a ,b ,1);
+	 }
+	return 0;
+}

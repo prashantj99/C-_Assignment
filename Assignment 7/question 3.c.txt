@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+int main(void)
+{
+    // check number in fabnocci
+    int num ,a=0 ,b=1;
+    int next ,flag=0;
+    
+    scanf("%d",&num);
+    
+    do
+    {
+      next=a+b;
+      if(num==next)
+      {
+          flag=1;
+          break;
+      }
+      
+      a=b;
+      b=next;
+      
+    }while(num>next);
+    
+    flag? printf("Found") : printf("Not Found");
+    
+    return 0;
+}

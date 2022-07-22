@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main(void)
+{
+    int a=0 ,b=1 ,next ,n;
+    
+    printf("%d\t%d\t",a ,b);
+    
+    scanf("%d",&n);
+    
+    int i=1;
+    
+    while(i<=n-2)
+    {
+        next=a+b;
+        printf("%d\t",next);
+        a=b;
+        b=next;
+        i++;
+    }
+    
+    return 0;
+}

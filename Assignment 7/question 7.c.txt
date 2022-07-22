@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(void) {
+	// all primes b/w two given numbers 
+	int from ,to ,flag=0;
+	scanf("%d %d",&from ,&to);
+	
+	for(int i=from+1; i<to; i++)
+	{
+	   // for each numbers
+	   //check primes
+	   flag=0;
+	   for(int j=2; j<=sqrt(i); j++)
+	   {
+	       if(i%j==0)
+	       {
+	           flag=1;
+	           break;
+	       }
+	   }
+	   if(!flag)
+	   {
+	       printf("%d\t",i);
+	   }
+	}
+	return 0;
+}
+

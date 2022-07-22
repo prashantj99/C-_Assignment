@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void) {
+	// check armstrong 
+	int num ,storenum ,sum=0 ,rem;
+	
+	scanf("%d",&num);
+	storenum=num;
+	
+	while(num)//jab kat 'num' hain
+	{
+	    rem=num%10;
+	    sum+=rem*rem*rem;
+	    num/=10;
+	}
+	
+	sum==storenum?printf("armstrong") : printf("not armstrong");
+	
+	return 0;
+}
+

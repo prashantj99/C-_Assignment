@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include<math.h>
+
+int main(void) {
+// 	print all primes under 100
+    int i ,num=3;
+    printf("2\t");
+    while(num<100)
+    {
+        for(i=2; i<=sqrt(num) ; i++)
+        {
+            if(num%i==0)
+            {
+                break;
+            }
+        }
+        
+        if(i>sqrt(num))
+        {
+            printf("%d\t",num);
+        }
+        
+        num++;
+    }
+	
+	return 0;
+}
