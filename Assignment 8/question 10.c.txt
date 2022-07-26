@@ -1,9 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
-	/*
-	    Pattern 9
-	*/
+	
 	int k=1;
 	
 	for(int i=1 ; i<=4 ; i++)
