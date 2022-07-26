@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main(void) {
+	// pattern 14
+	for(int i=1; i<=9; i++)
+	{
+	    if(i%2)
+	    {
+	        for(int j=1; j<=9; j++)
+	        {
+	            if(i!=9)
+	            {
+	                if(j==9 || j==9-(i-1))
+	                {
+	                    printf("*");
+	                }
+                    else
+                    { 
+                        printf(" ");
+                    }
+	            }
+	            else
+	            {
+	                j%2 ? printf("*") : printf(" ");
+	            }
+	            
+	        }
+	    }
+	    else
+	    {
+	      printf("\n");  
+	    }
+	}
+	return 0;
+}
+
