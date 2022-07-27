@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include<math.h>
+
+int main(void) {
+ 	/*
+ 	    C program to find all roots of a
+ 	    quadratic equation using switch case
+    */
+	
+	int a ,b ,c;
+	
+	scanf("%d %d %d",&a ,&b ,&c);
+	
+	int d=b*b-4*a*c;
+	
+	float x1 ,x2;
+	
+	switch(d>=0)
+	{
+	    case 1 : 
+	    x1=(-b-(float)sqrt(d))/2*a;
+	    printf("x1 : %.2f", x1);
+	    
+	    case 2:
+	    x2=(-b+(float)sqrt(d))/2*a;
+	    printf("\nx2 : %.2f", x2);
+        break;
+        
+	    default : printf("Imaginary roots");
+	  
+	}
+	
+	return 0;
+}
+

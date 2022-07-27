@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(void) {
+	// check leap year
+	int year;
+	
+	scanf("%d",&year);
+	
+	int ch=(year%100) ? 2 : 1;
+	
+	switch(ch)
+	{
+	    case 1 : //centuary year
+                (year%400)? printf("No") :printf("Yes");
+	            break;
+        case 2 : // non-centuary year
+                (year%4)? printf("No") :printf("Yes");
+	            break;
+	}
+	
+	return 0;
+}
+

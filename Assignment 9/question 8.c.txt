@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(void) {
+ 	/*
+ 	    Program to convert a positive number into a negative number and negative
+        number into a positive number using a switch statement.
+    */
+	int num;
+	
+	scanf("%d",&num);
+	
+	switch(num>0)
+	{
+	    case 1 : num=-num;
+	             printf("%d",num);
+	             break;
+        case 0 : num=-num;
+                 printf("%d",num);
+	}
+	
+	return 0;
+}
+

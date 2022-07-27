@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(void) {
+	/*Convert even 
+	number into its upper 
+	nearest odd number Switch Statement.
+	*/
+	int num;
+	
+	scanf("%d",&num);
+	
+	switch(num%2)
+	{
+	    case 0 : num++;
+	             printf("%d",num);
+                 break;
+                 
+        default : printf("Enter a valid number");
+	}
+	
+	return 0;
+}
+
