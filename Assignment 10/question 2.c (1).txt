@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+float calSI(int ,float ,int);
+
+int main(void) {
+// 	testcase
+    int p ,t;
+    float r;
+    for(int i=1; i<=3; i++)
+    {
+        scanf("%d %f %d",&p ,&r ,&t);
+        printf("\nSimple Interest : %.2f",calSI(p ,r ,t));
+    }
+	return 0;
+}
+
+float calSI(int p , float r ,int t)
+{
+    return (p*r*t)/100;
+}
+

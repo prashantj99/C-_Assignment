@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+float circleArea(int);
+
+int main(void) {
+// 	testcase
+    int r;
+    for(int i=1; i<=3; i++)
+    {
+        scanf("%d",&r);
+        printf("\nArea of circle is %.2f with radius %d",circleArea(r) ,r);
+    }
+	return 0;
+}
+
+float circleArea(int r)
+{
+    return 3.14*r*r;
+}
+
