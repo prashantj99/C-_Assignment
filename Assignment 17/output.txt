@@ -1,0 +1,12 @@
+
+a comes : 5 times
+l comes : 2 times
+h comes : 1 times
+b comes : 1 times
+d comes : 2 times
+  comes : 2 times
+n comes : 1 times
+m comes : 1 times
+i comes : 4 times
+s comes : 3 times
+p comes : 2 times
